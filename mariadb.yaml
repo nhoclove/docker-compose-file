@@ -8,8 +8,8 @@ services:
     volumes:
       - data-mariadb:/var/lib/mysql
     environment:
-      #MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
-      #MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: mydb
       MYSQL_USER: mariadb-user
       MYSQL_PASSWORD: 123456
     ports:
